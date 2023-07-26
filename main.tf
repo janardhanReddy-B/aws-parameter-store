@@ -15,3 +15,8 @@ variable "params" {
     { name = "roboshop.dev.frontend.shipping_url", value = "http://shipping-dev.devopsbjr.online:8080", type = "string" },
   ]
 }
+
+
+provider "aws" {
+  region = "us-east-1"
+}
