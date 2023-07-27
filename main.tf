@@ -16,5 +16,16 @@ variable "params" {
     { name = "roboshop.dev.cart.redis_host", value = "redis-dev.devopsbjr.online", type = "String" },
     { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.devopsbjr.online", type = "String" },
     { name = "roboshop.dev.cart.catalogue_port", value = "8080", type = "String" },
+    { name = "roboshop.dev.catalogue.mongo", value = "true", type = "String" },
+    { name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.devopsbjr.online:27017/catalogue", type = "String" },
+    { name = "roboshop.dev.payment.cart_host", value = "cart-dev.devopsbjr.online", type = "String" },
+    { name = "roboshop.dev.payment.cart_port", value = "8080", type = "String" },
+    { name = "roboshop.dev.payment.user_host", value = "user-dev.devopsbjr.online", type = "String" },
+    { name = "roboshop.dev.payment.user_port", value = "8080", type = "String" },
+    { name = "roboshop.dev.payment.amqp_host", value = "rabbitmq-dev.devopsbjr.online", type = "String" },
+    { name = "roboshop.dev.payment.amqp_user", value = "roboshop", type = "String" },
+
+    # usally passwords are not allowed strore i github. need to create mannually in aws
+    { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
   ]
 }
