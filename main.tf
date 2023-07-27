@@ -13,5 +13,8 @@ variable "params" {
     { name = "roboshop.dev.frontend.cart_url", value = "http://cart-dev.devopsbjr.online:8080/", type = "String" },
     { name = "roboshop.dev.frontend.payment_url", value = "http://payment-dev.devopsbjr.online:8080/", type = "String" },
     { name = "roboshop.dev.frontend.shipping_url", value = "http://shipping-dev.devopsbjr.online:8080/", type = "String" },
+    { name = "roboshop.dev.cart.redis_host", value = "redis-dev.devopsbjr.online", type = "String" },
+    { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.devopsbjr.online", type = "String" },
+    { name = "roboshop.dev.cart.catalogue_port", value = "8080", type = "String" },
   ]
 }
