@@ -26,6 +26,9 @@ variable "params" {
     { name = "roboshop.dev.payment.amqp_user", value = "roboshop", type = "String" },
     { name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devopsbjr.online:8080", type = "String" },
     { name = "roboshop.dev.shipping.db_host", value = "mysql-dev.devopsbjr.online", type = "String" },
+    { name = "roboshop.dev.user.mongo", value = "true", type = "String" },
+    { name = "roboshop.dev.user.redis_host", value = "redis-dev.devopsbjr.online", type = "String" },
+    { name = "roboshop.dev.user.mongo_url", value = "mongodb://mongodb-dev.devopsbjr.online:27017/users", type = "String" },
 
     # usally passwords are not allowed strore i github. need to create mannually in aws
     { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
