@@ -24,6 +24,8 @@ variable "params" {
     { name = "roboshop.dev.payment.user_port", value = "8080", type = "String" },
     { name = "roboshop.dev.payment.amqp_host", value = "rabbitmq-dev.devopsbjr.online", type = "String" },
     { name = "roboshop.dev.payment.amqp_user", value = "roboshop", type = "String" },
+    { name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devopsbjr.online:8080", type = "String" },
+    { name = "roboshop.dev.shipping.db_host", value = "mysql-dev.devopsbjr.online", type = "String" },
 
     # usally passwords are not allowed strore i github. need to create mannually in aws
     { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
