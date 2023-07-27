@@ -6,7 +6,6 @@ resource  "aws_ssm_parameter" "params" {
 
 }
 
-
 variable "params" {
   default = [
     { name = "roboshop.dev.frontend.catalogue_url", value = "http://catalogue-dev.devopsbjr.online:8080/", type = "String" },
@@ -15,9 +14,4 @@ variable "params" {
     { name = "roboshop.dev.frontend.payment_url", value = "http://payment-dev.devopsbjr.online:8080/", type = "String" },
     { name = "roboshop.dev.frontend.shipping_url", value = "http://shipping-dev.devopsbjr.online:8080/", type = "String" },
   ]
-}
-
-
-provider "aws" {
-  region = "us-east-1"
 }
