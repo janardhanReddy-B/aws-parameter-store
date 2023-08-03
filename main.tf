@@ -52,5 +52,51 @@ variable "params" {
     { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString" },
     { name = "roboshop.dev.docdb.password", value = "roboshop123", type = "SecureString" },
 
+
+
+
+
+
+
+
+    { name = "roboshop.prod.frontend.catalogue_url", value = "http://catalogue-prod.devopsbjr.online/", type = "String" },
+    { name = "roboshop.prod.frontend.user_url", value = "http://user-prod.devopsbjr.online/", type = "String" },
+    { name = "roboshop.prod.frontend.cart_url", value = "http://cart-prod.devopsbjr.online/", type = "String" },
+    { name = "roboshop.prod.frontend.payment_url", value = "http://payment-prod.devopsbjr.online/", type = "String" },
+    { name = "roboshop.prod.frontend.shipping_url", value = "http://shipping-prod.devopsbjr.online/", type = "String" },
+
+    { name = "roboshop.prod.cart.redis_host", value = "elasticache-prod.dfomof.clustercfg.use1.cache.amazonaws.com", type = "String" },
+    { name = "roboshop.prod.cart.catalogue_host", value = "catalogue-prod.devopsbjr.online", type = "String" },
+    { name = "roboshop.prod.cart.catalogue_port", value = "80", type = "String" },
+
+    { name = "roboshop.prod.catalogue.mongo", value = "true", type = "String" },
+    { name = "roboshop.prod.payment.cart_host", value = "cart-prod.devopsbjr.online", type = "String" },
+    { name = "roboshop.prod.payment.cart_port", value = "80", type = "String" },
+
+    { name = "roboshop.prod.payment.user_host", value = "user-prod.devopsbjr.online", type = "String" },
+    { name = "roboshop.prod.payment.user_port", value = "80", type = "String" },
+    { name = "roboshop.prod.payment.amqp_host", value = "rabbitmq-prod.devopsbjr.online", type = "String" },
+    { name = "roboshop.prod.payment.amqp_user", value = "roboshop", type = "String" },
+
+    { name = "roboshop.prod.shipping.cart_endpoint", value = "cart-prod.devopsbjr.online:80", type = "String" },
+    { name = "roboshop.prod.shipping.db_host", value = "rds-prod.cluster-cajpnbnycbmh.us-east-1.rds.amazonaws.com", type = "String" },
+
+    { name = "roboshop.prod.user.mongo", value = "true", type = "String" },
+    { name = "roboshop.prod.user.redis_host", value = "elasticache-prod.dfomof.clustercfg.use1.cache.amazonaws.com", type = "String" },
+    { name = "roboshop.prod.mysql.username", value = "roboshop", type = "String" },
+    { name = "roboshop.prod.docdb.username", value = "roboshop", type = "String" },
+    { name = "roboshop.prod.rabbitmq.amqp_user", value = "roboshop", type = "String" },
+    { name = "roboshop.prod.mysql.endpoint", value = "rds-prod.cluster-cajpnbnycbmh.us-east-1.rds.amazonaws.com", type = "String" },
+
+    ### Passwords will be never part of git repos, Usually in organizations we create them nanually. Meaning whom ever have access they will provision these secrets in parameter store.
+    { name = "roboshop.prod.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
+    { name = "roboshop.prod.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
+    { name = "roboshop.prod.mysql.password", value = "roboshop123", type = "SecureString" },
+    { name = "roboshop.prod.docdb.password", value = "roboshop123", type = "SecureString" },
+    { name = "roboshop.prod.catalogue.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-prod.cluster-cajpnbnycbmh.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
+    { name = "roboshop.prod.catalogue.docdb_endpoint", value = "docdb-prod.cluster-cajpnbnycbmh.us-east-1.docdb.amazonaws.com", type = "String" },
+    { name = "roboshop.prod.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-prod.cluster-cajpnbnycbmh.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
+    { name = "roboshop.prod.user.docdb_endpoint", value = "docdb-prod.cluster-cajpnbnycbmh.us-east-1.docdb.amazonaws.com", type = "String" },
+
   ]
 }
