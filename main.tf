@@ -39,5 +39,6 @@ variable "params" {
     { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
     { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString" },
     { name = "roboshop.dev.docdb.password", value = "roboshop123", type = "SecureString" },
+
   ]
 }
