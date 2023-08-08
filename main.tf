@@ -65,7 +65,7 @@ variable "params" {
     { name = "roboshop.prod.frontend.payment_url", value = "http://payment-prod.devopsbjr.online/", type = "String" },
     { name = "roboshop.prod.frontend.shipping_url", value = "http://shipping-prod.devopsbjr.online/", type = "String" },
 
-    { name = "roboshop.prod.cart.redis_host", value = "elasticache-prod.dfomof.clustercfg.use1.cache.amazonaws.com", type = "String" },
+    { name = "roboshop.prod.cart.redis_host", value = "elasticache-prod-instance.dfomof.0001.use1.cache.amazonaws.com", type = "String" },
     { name = "roboshop.prod.cart.catalogue_host", value = "catalogue-prod.devopsbjr.online", type = "String" },
     { name = "roboshop.prod.cart.catalogue_port", value = "80", type = "String" },
 
@@ -82,7 +82,7 @@ variable "params" {
     { name = "roboshop.prod.shipping.db_host", value = "rds-prod.cluster-cajpnbnycbmh.us-east-1.rds.amazonaws.com", type = "String" },
 
     { name = "roboshop.prod.user.mongo", value = "true", type = "String" },
-    { name = "roboshop.prod.user.redis_host", value = "elasticache-prod.dfomof.clustercfg.use1.cache.amazonaws.com", type = "String" },
+    { name = "roboshop.prod.user.redis_host", value = "elasticache-prod-instance.dfomof.0001.use1.cache.amazonaws.com", type = "String" },
     { name = "roboshop.prod.mysql.username", value = "roboshop", type = "String" },
     { name = "roboshop.prod.docdb.username", value = "roboshop", type = "String" },
     { name = "roboshop.prod.rabbitmq.amqp_user", value = "roboshop", type = "String" },
