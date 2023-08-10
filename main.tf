@@ -87,6 +87,7 @@ variable "params" {
     { name = "roboshop.prod.docdb.username", value = "roboshop", type = "String" },
     { name = "roboshop.prod.rabbitmq.amqp_user", value = "roboshop", type = "String" },
     { name = "roboshop.prod.mysql.endpoint", value = "rds-prod.cluster-cajpnbnycbmh.us-east-1.rds.amazonaws.com", type = "String" },
+    mongodb://roboshop:roboshop123@docdb-prod.cluster-cajpnbnycbmh.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false
 
     ### Passwords will be never part of git repos, Usually in organizations we create them nanually. Meaning whom ever have access they will provision these secrets in parameter store.
     { name = "roboshop.prod.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
